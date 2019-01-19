@@ -1,15 +1,68 @@
+@import '../../utils/colors.scss';
+
 .header {
-    height: 60vh;
-    padding: 20px;
+    height: 80vh;
+    padding: 25px 100px 20px 100px;
+    background: #c6c6c6;
     .top-header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
-        height: 30vh;                
-        .top-header1 {            
+        height: 25vh;                
+        .top-header1 {  
+            display: flex;                      
             .text-header {
                 text-align: center;
+                margin-right: 40px;
+                color: #f1f1f1;
+                cursor: pointer;                
             }
+            .text-header:hover {
+                color: #fff;
+            }
+        }
+        .top-header2 {            
+            display: flex;
+            justify-content: center;            
+            .avatar {
+                height: 100px;
+                width: 100px;     
+                cursor: pointer;             
+            }
+        }
+        .top-header3 {            
+            display: flex;
+            justify-content: flex-end;            
+            .button {
+                height: 40px;
+                width: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $primary-color;
+                cursor: pointer;
+                border-radius: 5px;
+                .text-header3 {
+                    color: #fff;
+                    font-size: 11px;
+                }
+            }
+            .button:hover {
+                background: $secondary-color;
+            }
+        }
+    }
+    .center-header {        
+        text-align: center;
+        .center-text1 {
+            color: #fff;
+            font-size: 40px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+        .center-text2 {
+            color: #fff;
+            font-size: 20px;
         }
     }
 }

@@ -1,0 +1,54 @@
+@import '../../utils//colors.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #fff;
+  .image-programmer {
+    height: 400px;
+    width: 50%;
+    margin: 50px;
+  }
+  .card {            
+    width: 50%;
+    border-radius: 5px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 2px 2px 2px 2px #cccccc;
+    padding: 20px;
+    .title {
+      text-align: center;
+      font-size: 30px;
+      color: #262626;
+      margin-bottom: 30px;
+    }
+    .content {      
+      display: table;      
+      font-size: 18px;
+      color: #808080;
+      margin-bottom: 40px;
+      line-height: 1.86842105em;
+    }
+    .button {
+      cursor: pointer;
+      bottom: 0px;
+      margin: auto;
+      background: $primary-color;
+      height: 40px;
+      width: 150px;
+      text-align: center;
+      line-height: 40px;
+      align-self: center;
+      border-radius: 5px;
+      .button-text {        
+        color: #fff;
+      }
+    }
+    .button:hover {
+      background: $secondary-color;
+    }
+  }
+}
