@@ -1,0 +1,15 @@
+.header {
+    height: 60vh;
+    padding: 20px;
+    .top-header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        height: 30vh;                
+        .top-header1 {            
+            .text-header {
+                text-align: center;
+            }
+        }
+    }
+}
